@@ -1,5 +1,5 @@
 WITH raw_listings as (
-                        select * from AIRBNB.RAW.RAW_LISTINGS
+        select * from {{ source('airbnb','listings')}}
 )
 
         SELECT
@@ -12,5 +12,5 @@ WITH raw_listings as (
          price AS price_str,
          created_at,
          updated_at
-        FROM
+                FROM
          raw_listings
