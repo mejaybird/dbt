@@ -1,0 +1,4 @@
+packages:
+  - git: "https://github.com/dbt-labs/dbt-utils.git" # git URL
+    revision: 0.8.0 # tag or branch name
+    
